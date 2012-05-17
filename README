@@ -1,0 +1,124 @@
+$Id: README 962804 2010-07-10 09:59:53Z spepping $
+
+==============================================================================
+  APACHE XML GRAPHICS COMMONS  -  README
+==============================================================================
+
+Contents of this file:
+ - What is Apache XML Graphics Commons?
+ - Where to get help?
+ - How do I build Apache XML Graphics Commons?
+ - Legal information
+ - Release Notes
+
+==============================================================================
+
+
+What is Apache XML Graphics Commons?
+---------------------------------------
+
+It is a place where the Apache Batik and Apache FOP share commonly used 
+components. Many components in here are also usable and useful stand-alone.
+    
+Documentation
+---------------------    
+
+The documentation can be found under:
+http://xmlgraphics.apache.org/commons/
+
+Where to get help?
+---------------------    
+
+Please subscribe to the general@xmlgraphics.apache.org mailing list by sending
+an empty mail to general-subscribe@xmlgraphics.apache.org. All you questions
+about XML Graphics Commons will be answered there.    
+
+Please report bugs to bugzilla at http://issues.apache.org/bugzilla/
+
+
+How do I build Apache XML Graphics Commons?
+----------------------------------------------
+
+If you've downloaded a binary distribution of Apache FOP or Apache Batik, 
+you don't need to build XML Graphics Commons. It is distributed with these
+two products.
+
+Otherwise, install Apache Ant (http://ant.apache.org) and run "ant" from the
+command-line in the directory where you find "build.xml".
+
+Legal information
+--------------------
+
+Apache XML Graphics Commons is published under the Apache License 
+version 2.0. For the license text, please see the following files:
+- LICENSE
+- NOTICE
+
+Legal information on libraries used by Apache XML Graphics Commons, i.e. 
+its dependencies, can be found in the "lib/README.txt" file.
+
+Apache XML Graphics Commons contains unmodified copies of the Adobe Glyph
+List and the ITC Zapf Dingbats Glyph List, available from:
+http://www.adobe.com/devnet/opentype/archives/glyph.html
+
+License labeling (according to http://www.apache.org/legal/3party.html):
+- Multi-Licensed
+- Source Available
+- No Reciprocity Required
+
+==============================================================================
+  KNOWN ISSUES
+==============================================================================
+
+- PostScript output: When TexturePaint is used with PSGraphics2D, the output
+  violates the DSC specification. Extracting single pages from a multi-page
+  PostScript file can result in errors.
+
+==============================================================================
+  RELEASE NOTES
+==============================================================================
+
+For more detailed info about the changes, please see:
+http://xmlgraphics.apache.org/commons/changes.html
+
+Version 1.4
+-----------
+
+This release adds the option to generate smaller PostScript files,
+support for the AdobeStandardCyrillic encoding, RefinedImageFlavor,
+TexturePaint support for PSGraphics2D (PostScript tiling patterns),
+improvements to the XMP framework, optimization for PostScript state
+handling in (E)PSDocumentGraphics2D, and more. In addition it contains
+a number of bug fixes.
+
+Version 1.3.1
+--------------
+
+This release is mostly a bugfix release for the image loading framework that
+has been introduced in version 1.3.
+
+Version 1.3
+--------------
+
+The most important addition in this release is an image loading framework
+which supports all sorts of different image formats (bitmap and vector) and
+is highly extensible.
+Besides that there were a larger number of smaller additions and bugfixes.
+Support for Java 1.3 has been dropped. Java 1.4 or later is required now.
+
+Version 1.2
+--------------
+
+This release mainly adds support for CMYK and GRAY color spaces for PSGenerator.
+
+Version 1.1
+--------------
+
+This release adds an XMP metadata framework and brings improvements for the
+ImageWriter package plus some minor fixes mainly in the PostScript area.
+
+Version 1.0
+--------------
+
+This is the first release of Apache XML Graphics Commons. There are currently
+no known issues with the code.
