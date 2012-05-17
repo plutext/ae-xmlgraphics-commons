@@ -1,4 +1,7 @@
-$Id: README 962804 2010-07-10 09:59:53Z spepping $
+This project is xmlgraphics-commons, altered to use ae.java.awt and ae.javax.imageio,
+in order that it can run on Android.
+
+Original Apache readme follows:-
 
 ==============================================================================
   APACHE XML GRAPHICS COMMONS  -  README
